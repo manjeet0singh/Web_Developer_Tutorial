@@ -1,14 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manjeet Kumar Singh</title>
+    <title>Example media quarys</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font: 14px georgia serif;
+    background-color: #ccc;
+
+}
+article,aside,figure,footer,header,hgroup,menu,nav,section{
+    display: block;
+}
+h2{
+    font: 24px georgia;
+    margin: 0 0 10px 0;
+
+}
+h3{
+    margin: 0 0 8px 0;
+}
+p{
+    margin: 0 0 2px;
+
+}
+#fluid-wrap{
+    width: 900px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: #eee;
+    overflow: hidden;
+
+}
+#sidebar{
+    width: 295px;
+    float: left;
+}
+#main-content{
+    float: right;
+    padding-left: 2px;
+    text-overflow: clip;
+    width: 600px;
+} 
+#main-content p {
+    line-height: 1.5;
+}
+
+#sidebar ul{
+    list-style: none;
+}
+
+#sidebar ul li {
+    margin-top: 20px;
+}
+#sidebar ul li a {
+    color: #900;
+    text-decoration: none;
+    padding: 3px 0;
+    display: block;
+}
+.icon {
+    width: 25px;
+}
+.profile-section {
+    margin-bottom: 250px;
+}
+.project-section h1 {
+    text-align: center;
+}
+.project-section {
+    width: 500px;
+    margin: 0 auto;
+}
+@media (max-width: 950px) {
+    #fluid-wrap{
+        width: 750px;
+    }
+    #sidebar{
+        width: 200px;
+    }
+    #main-content{
+        width: 500px;
+    }
+}
+@media (max-width: 845px) {
+    #fluid-wrap{
+        width: 700px;
+    }
+    #sidebar{
+        width: 160px;
+    }
+    #main-content{
+        width: 530px;
+    }
+}
+@media (max-width: 800px) {
+    #fluid-wrap{
+        width: 650px;
+    }
+    #sidebar{
+        width: 150px;
+    }
+    #main-content{
+        width: 450px;
+    }
+    .project-section {
+        clear: both;
+        
+    }
+    .profile-section {
+    margin-bottom: 300px;
+}
+}
+@media (max-width: 730px) {
+    #fluid-wrap{
+        width: 530px;
+    }
+    #sidebar{
+        width: 150px;
+    }
+    #main-content{
+        width: 350px;
+    }
+    .project-section {
+        clear: both;
+        width: 350px;
+    }
+    .profile-section {
+    margin-bottom: 380px;
+}
+}
+
+
+@media (max-width: 600px) {
+    #fluid-wrap{
+        width: 430px;
+    }
+    #sidebar{
+        width: 150px;
+    }
+    #main-content{
+        width: 250px;
+    }
+}
+
+@media (max-width: 500px) {
+    #fluid-wrap{
+        width: 330px;
+    }
+    #sidebar{
+        width: 150px;
+    }
+    #main-content{
+        width: 150px;
+    }
+}
+    </style>
 </head>
+
 <body>
-    <div class="conatiner">
-        <p>Responsive Page Tutorial</p>
+    <div id="fluid-wrap">
+        <div class="profile-section">
+            <div id="sidebar">
+                <h3>Team WebyRoot Private Limited</h3>
+                <ul id="nav">
+                    <li><a href="milto:mazhurul467@gmail.com"><img class="icon"
+                                src="/NEW_Apna_College/img/images.png">Vishal Kumar Singh</a></li>
+
+                    <li><a href="milto:manjeetkyp24@gmail.com"><img class="icon" src="/NEW_Apna_College/img/images.png">
+                            Manjeet kumar Singh</a></li>
+                    <li><a href="milto:shadabahmad45@gmail.com"><img class="icon"
+                                src="/NEW_Apna_College/img/images.png"> Shadab Ahmad</a></li>
+                    <li><a href="milto:mazhurul467@gmail.com"><img class="icon" src="/NEW_Apna_College/img/images.png">
+                            Mazharul Haque</a></li>
+
+                </ul>
+            </div>
+            <div id="main-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, totam placeat! Vel fugiat possimus
+                    commodi in, illo necessitatibus obcaecati quaerat incidunt, at velit iure rem et consequuntur modi
+                    facere. Aspernatur voluptatem omnis esse blanditiis. Lorem ipsum dolor sit amet consectetur
+                    adipisicing
+                    elit. Eveniet nobis vel illum in, tempora enim, corrupti culpa voluptate minus velit doloribus ea
+                    recusandae? </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta enim fugiat maxime temporibus, earum
+                    aspernatur vitae possimus, exercitationem odit ab at id vero. Dolore totam repellendus quam ea eos
+                    accusamus consectetur fugit illum dicta. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Sed
+                    magni rem numquam optio aliquid, nam distinctio necessitatibus laborum facere suscipit iure cum
+                    maxime
+                    aperiam molestias sit laudantium quidem, mollitia dolor eos officia!</p>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h1>Project / Pages</h1>
+
+            <div class="projects">
+                <p><a href="float_challenge.html">Float Challenge</a></p>
+            </div>
+        </div>
+
     </div>
 </body>
+
 </html>
