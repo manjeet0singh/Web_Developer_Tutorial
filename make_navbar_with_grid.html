@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100;1,300&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-family: poppins;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+            display: grid;
+            grid-template-rows: 1fr 1fr 4fr;
+            grid-gap: 0.5rem;
+            grid-template-columns: repeat(7, 2fr);
+            height: 12px;
+        }
+
+        .box {
+            text-align: center;
+        }
+
+        .box:hover {
+            color: red;
+            cursor: pointer;
+            text-decoration: underline rgb(19, 19, 168);
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+        }
+
+        .about {
+            text-align: center;
+            padding-top: 50px;
+            color: black;
+            background-color: #f3d9fa;
+
+
+        }
+
+        .spare {
+            display: grid;
+            grid-template-columns: auto 550px;
+            padding: 50px;
+            /* justify-content: space-around; */
+            gap: 40px;
+        }
+
+        .img {
+            background-image: url("/its.jpg");
+            height: 500px;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .writen p {
+            line-height: 2;
+        }
+
+        .service {
+            padding-bottom: 100px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 40px;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .product_img {
+            width: 300px;
+            height: 200px;
+        }
+
+        .services p {
+            margin-top: 10px;
+        }
+
+        .profile-img {
+            border-radius: 80%;
+        }
+
+        .profile-section {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-items: center;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="http://webyroot.themakh.com/assets/media/webyroot_black.png" alt="WebyRoot Logo" class="logo">
+
+        </div>
+
+        <div class="content">
+
+            <div class="box">Home</div>
+
+            <div class="box">Contact us</div>
+            <div class="box">For Y0u</div>
+            <div class="box">Instagram</div>
+            <div class="box">Facebook</div>
+            <div class="box">Twitter</div>
+            <div class="box">Feedback</div>
+
+
+        </div>
+    </div>
+    <div class="img">
+    </div>
+    <div class="about">
+        <h1>What Makes a Great About Us Page?</h1>
+
+        <div class="spare">
+
+
+            <div class="img-about">
+                <img src="/about us.webp" alt="">
+            </div>
+            <div class="writen">
+                <p>Informative. It doesn’t always have to tell your whole story, but it should at least provide people
+                    with an idea of .
+                    Contain social proof, testimonials, and some personal information that visitors can relate to, such
+                    as education, family, etc.
+                    The main purpose of your About Us page is to give your visitors a glimpse into who you are as a
+                    person or a business (or sometimes both).
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <h1 style="text-align: center;padding-top: 50px;">Service</h1>
+    <div class="service">
+        <div class="services">
+            <img src="/download (3).jpg" class="product_img" alt="">
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, at.</p>
+        </div>
+        <div class="services">
+            <img src="/download (1).jpg" class="product_img" alt="">
+            <h3>WordPress Theme</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, at.</p>
+        </div>
+        <div class="services">
+            <img src="/download (2).jpg" class="product_img" alt="">
+            <h3>Cpanel / DNS / Email Fixing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, at.</p>
+        </div>
+        <div class="services">
+            <img src="https://thumbs.dreamstime.com/b/digital-marketing-content-planning-advertising-strategy-concept-102729417.jpg"
+                class="product_img" alt="">
+            <h3>Digital Marketting</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, at.</p>
+        </div>
+        <div class="services">
+            <img src="https://images.pexels.com/photos/4160089/pexels-photo-4160089.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                class="product_img" alt="">
+            <h3>Domain / Hosting</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, at.</p>
+        </div>
+        <div class="services">
+            <img src="https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                class="product_img" alt="">
+            <h3>Graphic Design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, at.</p>
+        </div>
+    </div>
+    <div class="profile-section">
+        <div class="profile">
+            <img src="https://scontent.fbom47-1.fna.fbcdn.net/v/t1.6435-9/199220135_569601677355517_1848457116146776758_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=JaJdwfqxcuwAX8XIB_P&tn=71MQFOqXxObyvjZF&_nc_ht=scontent.fbom47-1.fna&oh=00_AT8-kntY_GJOil12Tb70HeiLGjQc8hINCXaQlTipS929qA&oe=622D5B5C"
+                alt="Avatar" class="profile-img" style="width:200px">
+            <h4><a href="" target="_blank"> </a></h4>
+        </div>
+        <div class="profile">
+            <img src="https://scontent.fbom47-1.fna.fbcdn.net/v/t39.30808-1/p200x200/272133975_464508125029114_9073222076994475861_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=7206a8&_nc_ohc=3v3JFPa_ErIAX_BFzxv&tn=71MQFOqXxObyvjZF&_nc_ht=scontent.fbom47-1.fna&oh=00_AT9H1khuc2kNPwVNLjTS7TtBDkPmo2b97_dKfyh-zhdx7w&oe=620A590C" alt="Avatar" class="profile-img" style="width:200px">
+            <h4>Ankit  kumr Singh</h4>
+        </div>
+        <div class="profile">
+            <img src="https://scontent.fbom47-1.fna.fbcdn.net/v/t39.30808-6/217041362_2992897564370704_7308737798036567047_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=9h-cHK-B-QYAX-gKe9Z&_nc_ht=scontent.fbom47-1.fna&oh=00_AT9m3ODg57Zm3vSlo1BdVk9nlQvVZ9hF06RytPiYqV4iTw&oe=620C1DA2" alt="Avatar" class="profile-img" style="width:200px">
+            <h4>Manjeet Kumar Singh</h4>
+        </div>
+        <div class="profile">
+            <img src="ms n.png" alt="Avatar" class="profile-img" style="width:200px">
+            <h4>Manjeet Kumar Singh</h4>
+        </div>
+    </div>
+</body>
+
+</html>
